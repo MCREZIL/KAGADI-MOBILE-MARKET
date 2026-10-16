@@ -1,3 +1,75 @@
+# KAGADI MOBILE MARKET AND SERVICES CENTRE - .gitignore
+# Design by mcrezil Ezra
+
+# Flutter / Dart
 .dart_tool/
-build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
 pubspec.lock
+
+# Web build output (don't push, Netlify builds from source)
+# Uncomment if you want to push build/web
+# /build/
+
+# Android
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/app/build/
+/android/.gradle
+/android/app/*.jks
+/android/app/*.keystore
+/android/local.properties
+/android/key.properties
+/android/app/google-services.json
+
+# iOS
+/ios/Flutter/flutter_assets/
+/ios/Flutter/flutter_export_environment.sh
+/ios/.generated/
+**/ios/**/Generated.xcconfig
+
+# macOS
+/macos/Flutter/GeneratedPluginRegistrant.swift
+
+# Windows
+/windows/flutter/generated_plugin_registrant.cc
+/windows/flutter/generated_plugin_registrant.h
+/windows/flutter/generated_plugins.cmake
+
+# Secrets - IMPORTANT for your real-time no-server version
+# Admin hash/salt are in SharedPreferences not code, but keep these safe
+.env
+*.env
+**/firebase_options.dart
+**/google-services.json
+**/GoogleService-Info.plist
+lib/firebase_options.dart
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+**/supabase_keys.dart
+**/keys.dart
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Logs
+*.log
+flutter_*.log
+
+# Misc
+*.lock
+coverage/
+doc/api/
