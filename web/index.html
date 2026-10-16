@@ -1,111 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- KAGADI MOBILE MARKET AND SERVICES CENTRE -->
   <base href="$FLUTTER_BASE_HREF">
-
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO + Browser Tab Title -->
-  <title>KAGADI MOBILE MARKET AND SERVICES CENTRE - FOR ALL GOOD AND SERVICE </title>
-  <meta name="description" content="KAGADI MOBILE MARKET AND SERVICES CENTRE - We deliver in all parts of Kagadi and other country areas. Trusted by all businesses in Kagadi and beyond. Goods: Retailers numbers, Wholesalers packets bundles boxes. Services: Pharmacy, Clinic, Saloon. Boda-boda Kagadi to all Uganda.">
-  <meta name="keywords" content="Kagadi market, Kagadi mobile market, mcrezil Ezra, Kagadi shops, boda boda Kagadi, pharmacy Kagadi">
-  <meta name="author" content="mcrezil Ezra">
-  <meta name="copyright" content="ALL RIGHTS RESERVED © Design by mcrezil Ezra">
-
-  <!-- Open Graph for WhatsApp sharing -->
-  <meta property="og:title" content="KAGADI MOBILE MARKET AND SERVICES CENTRE">
-  <meta property="og:description" content="WE ARE TRUSTED BY ALL BUSINESSES IN KAGADI AND BEYOND.">
-  <meta property="og:type" content="website">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <!-- iOS meta tags & icons -->
+  <meta name="description" content="KAGADI MOBILE MARKET AND SERVICES CENTRE">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="KAGADI MARKET">
+  <meta name="apple-mobile-web-app-title" content="kagadi_mobile_market">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>KAGADI MOBILE MARKET AND SERVICES CENTRE</title>
   <link rel="manifest" href="manifest.json">
-
   <style>
-    /* Loading screen with your brand */
-    body {
-      background-color: #0A3D62;
-      margin: 0;
-      padding: 0;
-    }
-    #loading {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    #loading h1 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-    #loading p {
-      font-size: 12px;
-      opacity: 0.8;
-    }
-    .spinner {
-      border: 4px solid rgba(255,255,255,0.3);
-      border-radius: 50%;
-      border-top: 4px solid white;
-      width: 40px;
-      height: 40px;
-      animation: spin 1s linear infinite;
-      margin-bottom: 20px;
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
+    body { background-color: #0A3D62; }
+   .loading { display:flex; justify-content:center; align-items:center; height:100vh; color:white; font-family:sans-serif; flex-direction:column; }
   </style>
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = null;
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
 </head>
 <body>
-  <!-- Loading screen shows until Flutter loads -->
-  <div id="loading">
-    <div class="spinner"></div>
-    <h1>KAGADI MOBILE MARKET<br>AND SERVICES CENTRE</h1>
-    <p>WE DELIVER IN ALL PARTS OF KAGADI AND OTHER COUNTRY AREAS<br>
-    WE ARE TRUSTED BY ALL BUSINESSES IN KAGADI AND BEYOND<br><br>
-    Loading real-time market...<br>
-  </p> 
+  <div class="loading">
+    <h2>KAGADI MOBILE MARKET</h2>
+    <p>Loading... ALL RIGHTS RESERVED © Design by mcrezil Ezra</p>
   </div>
-
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Hide loading when Flutter starts
-      var loading = document.querySelector('#loading');
-      
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            loading.style.display = 'none';
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
-  </html>
+</html>
