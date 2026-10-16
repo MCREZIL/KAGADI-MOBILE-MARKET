@@ -19,7 +19,7 @@ jobs:
           flutter-version: '3.22.0'
           channel: 'stable'
       - run: flutter pub get
-      - run: flutter build web --release
+      - run: flutter build web --release --base-href /KAGADI-MOBILE-MARKET-AND-SERVICES-CENTRE.-/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./build/web
